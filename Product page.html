@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Inventory</h1>
+        <button onclick="showAddProductForm()">Add New Product</button>
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+            <!-- Repeat rows for each product -->
+            <tr>
+                <td>Sample Product</td>
+                <td>Sample Description</td>
+                <td>$20.00</td>
+                <td>50</td>
+                <td>
+                    <button onclick="editProduct(productID)">Edit</button>
+                    <button onclick="deleteProduct(productID)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
